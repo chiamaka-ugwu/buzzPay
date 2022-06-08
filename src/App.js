@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import './index.css';
 import logo from "./images/logo.png";
 import hero from "./images/hero.jpg";
-// import blur from './images/blur.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBoltLightning } from "@fortawesome/free-solid-svg-icons";
 import { faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
