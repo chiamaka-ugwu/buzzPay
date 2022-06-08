@@ -7,7 +7,394 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background-image: url(./images/blur.png); */
+    /* background-position: 0 0 100% */
+    background-repeat: no-repeat;
+}
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    z-index: 2000;
+}
+.modal .box{
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    width: 40%;
+    height: 350px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 6rem;
+}
+.modal .fa-solid{
+    font-size: 2rem;
+    color: red;
+    float: right;
+    margin: 0.5rem 1rem 0 0;
+}
+.modal h1{
+    width: 60%;
+    margin: auto;
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+}
+.modal form{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.modal form input#email{
+    padding: 20px;
+    width: 70%;
+    border: 1px solid #000;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1.1rem;
+}
+.modal form input#email::placeholder{
+    color: #0C1825;
+    font-size: 0.9rem;
+}
+.modal form input.submit{
+    padding: 15px;
+    width: 20%;
+    background: #0C1825;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin-left: -7.5rem;
+}
+.modal form input.submit:hover{
+    background-color: #073F74;
+}
+.modal p{
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #0C1825;
+}
+
+
+nav{
+    width: 100%;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+}
+nav .logo{
+    display: inline;
+    margin: 1.5rem 0 0 5rem;
+    position: absolute;
+}
+nav .fa-solid{
+    display: none;
+}
+nav ul{
+    display: inline;
+    float: right;
+    margin: 2rem 30rem 0 0;
+}
+nav ul li{
+    display: inline;
+    margin-left: 2rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+nav ul li a:hover{
+    color: #073F74;
+}
+
+
+#hero{
+    width: 100%;
+    display: flex;
+}
+#hero .left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+}
+#hero .left .text{
+   margin-top: 3rem;
+}
+
+#hero .left .text h5{
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+#hero .left .text h1{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+#hero .left .text form{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#hero .left .text form input#email{
+    padding: 20px;
+    width: 70%;
+    border: 1px solid #000;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1.1rem;
+}
+#hero .left .text form input#email::placeholder{
+    color: #0C1825;
+    font-size: 0.9rem;
+}
+#hero .left .text form input.submit{
+    padding: 15px;
+    width: 20%;
+    background: #0C1825;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin-left: -7.8rem;
+}
+#hero .left .text form input.submit:hover{
+    background-color: #073F74;
+}
+#hero .left .text p{
+    font-size: 0.8rem;
+    color: #0C1825;
+}
+#hero aside{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+#hero aside .box{
+    padding: 15px;
+    text-align: center;
+    width: fit-content;
+    background-color: #0C1825;
+    margin: 0.2rem;
+    border-radius: 10px;
+}
+#hero aside .box p{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #fff;
+}
+#hero aside .box .fa-solid, .fa-regular{
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+.socials{
+    display: inline;
+    margin-left: 8rem;
+}
+.socials .fa-brand{
+    margin-left: 3rem;
+    font-size: 1.2rem;
+}
+.socials .fa-brand:hover{
+    color: #073F74;
+}
+
+#hero .right{
+    width: 50%;  
+}
+#hero .right img{
+    margin-top: 3rem;
+    width: 68%;  
+}
+
+footer ul{
+    display: inline;
+    float: right;
+    margin-right: 2rem;
+}
+footer ul li{
+    display: inline;
+    margin-right: 2rem;
+}
+footer ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+footer ul li a:hover{
+    color: #073F74;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .modal .box{
+        width: 80%;
+        height: 400px;
+        
+        margin-top: 6rem;
+    }
+    .modal .fa-solid{
+        font-size: 2rem;
+        color: red;
+        float: right;
+        margin: 0.5rem 1rem 0 0;
+    }
+    .modal h1{
+        width: 90%;
+        margin: auto;
+        font-size: 2.2rem;
+        margin-top: 3.5rem;
+    }
+    .modal form input#email{
+        width: 80%;
+        padding: 15px 10px;
+        margin-top: 1rem;
+    }
+    
+    .modal form input.submit{
+        width: 25%;
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 12px;
+        
+        margin-left: -5rem;
+    }
+    .modal form input.submit:hover{
+        background-color: #073F74;
+    }
+    .modal p{
+        font-size: 1rem;
+    }    
+
+
+    nav{
+        box-shadow: 0px 5px 15px rgba(158, 160, 161, 0.2);
+    }
+    nav .logo{
+        margin: 1.5rem 0 0 2rem;
+        position: absolute;
+    }
+    nav .fa-solid{
+        display: block;
+        float: right;
+        font-size: 1.5rem;
+        margin: 1.5rem 1.5rem 0 0;
+    }
+    nav ul{
+        display: none;
+        width: 100%;
+        margin: 2rem 0 0 0;
+        text-align: center;
+        padding-top: 1rem;
+        background-color: white;
+        box-shadow: 0px 5px 15px rgba(158, 160, 161, 0.2);
+    }
+    nav ul li{
+        display: block;
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+    
+    #hero{
+        flex-flow: column wrap;
+    }
+    #hero .left{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #hero .left .text{
+        text-align: center;
+       margin-top: 2rem;
+    }
+    #hero .left .text h1{
+        width: 90%;
+        margin: auto;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    #hero .left .text form input#email{
+        width: 75%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    
+    #hero .left .text form input.submit{
+        margin-left: -6rem;
+        width: 25%;
+        text-align: center;
+    }
+    
+    #hero .left .text p{
+        font-size: 0.9rem;
+    }
+    #hero aside{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    #hero aside .box{
+        padding: 20px 15px;
+        text-align: center;
+        width: 80%;
+        margin: 1rem;
+    }
+    #hero .right{
+        width: 100%;  
+    }
+    #hero .right img{
+        margin-top: 1rem;
+        width: 100%;  
+    }
+    footer{
+        width: 100%;
+    }
+    footer .socials{
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .socials .fa-brand{
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+    .socials .fa-brand:hover{
+        color: #073F74;
+    }
+    footer ul{
+        display: inline;
+        float: right;
+        margin-right: 2rem;
+    }
+    footer ul li{
+        display: inline;
+        margin-right: 2rem;
+    }
+    footer ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    }
+    footer ul li a:hover{
+        color: #073F74;
+    }
 }
