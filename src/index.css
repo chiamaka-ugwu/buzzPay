@@ -388,6 +388,7 @@ footer ul li a:hover{
     footer ul li{
         display: inline;
         margin-right: 2rem;
+        margin-bottom: 2rem;
     }
     footer ul li a{
         text-decoration: none;
