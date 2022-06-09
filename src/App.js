@@ -28,7 +28,8 @@ function App() {
               }}
             />
             <h1>Get Notified When we Launch🚀</h1>
-            <form method="POST" name="BuzzPay" data-netlify="true">
+            <form method="post" name="BuzzPay">
+              <input type="hidden" name="form-name" value="BuzzPay" />
               <input
                 type="email"
                 name="email"
