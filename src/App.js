@@ -88,14 +88,10 @@ function App() {
             <h5>coming soon 🚀🚀🚀</h5>
             <h1>Get Notified</h1>
             <h1> When we Launch🚀</h1>
-            <form method="POST" name="BuzzPay" data-netlify="true">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your Email Address"
-              />
-              <input type="submit" value="Notify Me" className="submit" />
+            <form method="post" name="BuzzPay">
+                <input type="hidden" name="form-name" value="BuzzPay" />
+                <input type="email" name="email" id="email" placeholder="Enter your Email Address"/>
+                <input type="submit" value="Notify Me" className="submit" />
             </form>
             <p>*Dont worry, we will not spam you.</p>
             <aside>

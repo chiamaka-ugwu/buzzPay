@@ -27,19 +27,16 @@
     <title>buzzPay</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
 
-  
     <form name="BuzzPay" netlify netlify-honeypot="bot-field" hidden>
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-        <textarea name="message"></textarea>
+        <input type="email" name="email" id="email" placeholder="Enter your Email Address"/>
+        <input type="submit" value="Notify Me" className="submit" />
     </form>
 
 
 
-
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
 
 
     <!--
