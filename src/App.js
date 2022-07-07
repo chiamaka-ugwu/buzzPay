@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './index.css';
 import logo from "./images/logo.png";
-import hero from "./images/hero.jpg";
+import hero from "./images/buz-img.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBoltLightning } from "@fortawesome/free-solid-svg-icons";
 import { faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
@@ -38,7 +38,7 @@ function App() {
               />
               <input type="submit" value="Notify Me" className="submit" />
             </form>
-            <p>*Dont worry, we will not spam you.</p>
+            <p>Be the first to know when we launch and get N2000 in your wallet</p>
           </div>
         </section>
       )}
@@ -93,7 +93,7 @@ function App() {
                 <input type="email" name="email" id="email" placeholder="Enter your Email Address"/>
                 <input type="submit" value="Notify Me" className="submit" />
             </form>
-            <p>*Dont worry, we will not spam you.</p>
+            <p>Be the first to know when we launch and get N2000 in your wallet</p>
             <aside>
               <div className="box">
                 <FontAwesomeIcon className="fa-solid" icon={faBoltLightning} />

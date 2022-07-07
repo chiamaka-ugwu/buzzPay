@@ -95,8 +95,11 @@ nav{
 }
 nav .logo{
     display: inline;
-    margin: 1.5rem 0 0 5rem;
+    margin: 1rem 0 0 5rem;
     position: absolute;
+}
+nav .logo img{
+    width: 60%;
 }
 nav .fa-solid{
     display: none;
@@ -166,13 +169,13 @@ nav ul li a:hover{
     outline: none;
     border: none;
     color: #fff;
-    margin-left: -7.8rem;
+    margin-left: -8.5rem;
 }
 #hero .left .text form input.submit:hover{
     background-color: #073F74;
 }
 #hero .left .text p{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #0C1825;
 }
 #hero aside{
@@ -211,13 +214,17 @@ nav ul li a:hover{
 }
 
 #hero .right{
-    width: 50%;  
+    width: 50%; 
+    display: flex;
+    justify-content: center; 
 }
 #hero .right img{
     margin-top: 3rem;
-    width: 68%;  
+    width: 70%;  
 }
-
+footer{
+    margin-bottom: 4rem;
+}
 footer ul{
     display: inline;
     float: right;
@@ -278,6 +285,8 @@ footer ul li a:hover{
     }
     .modal p{
         font-size: 1rem;
+        width: 90%;
+        margin: auto;
     }    
 
 
@@ -334,13 +343,15 @@ footer ul li a:hover{
     }
     
     #hero .left .text form input.submit{
-        margin-left: -6rem;
+        margin-left: -6.5rem;
         width: 25%;
         text-align: center;
     }
     
     #hero .left .text p{
         font-size: 0.9rem;
+        width: 80%;
+        margin: auto;
     }
     #hero aside{
         display: flex;
